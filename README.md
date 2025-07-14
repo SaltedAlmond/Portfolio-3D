@@ -1,4 +1,4 @@
-# 🪄 3D Interactive Portfolio
+# 3D Interactive Portfolio
 
 This is my **3D portfolio website**, built with **React**, **Three.js**, and **@react-three/fiber**. It features a **stylized floating island** I modeled and textured myself, imported as a `.glb` file and rendered in real time. The site offers an interactive experience using orbit camera controls and lighting to bring the scene to life.
 
