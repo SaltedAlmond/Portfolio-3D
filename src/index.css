@@ -1,11 +1,17 @@
-* {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100vh;    /* FULL viewport height */
+  width: 100vw;     /* FULL viewport width */
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  background: #ffc66e; /* your orange */
 }
 
 #canvas-container {
-  width: 100vw;
-  height: 100vh;
-  background: deepskyblue;
+  height: 100%;
+  width: 100%;
+  display: flex; /* To arrange children side by side */
 }
