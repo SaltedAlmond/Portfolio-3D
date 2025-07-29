@@ -1,12 +1,19 @@
-# React + Vite
+# 3D Interactive Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my 3D portfolio website, built with React, Three.js, and @react-three/fiber. It features a stylized floating island I modeled and textured myself, imported as a .glb file and rendered in real time. The site offers an interactive experience using orbit camera controls and lighting to bring the scene to life.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 Custom 3D Model – Modeled and textured the floating island scene from scratch.
+- 🧭 Interactive Exploration – Users can pan, zoom, and rotate the scene with OrbitControls.
+- ⚡️ Fast Performance – Powered by [Vite](https://vitejs.dev/) for lightning-fast development and builds.
+- 🎛 Lighting Setup – Includes ambient and directional lights to enhance the visuals.
+- 🌐 Responsive Fullscreen Canvas – Scales to fill any browser size with a sky blue background.
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React – UI Framework
+- Three.js – 3D rendering engine
+- @react-three/fiber – React renderer for Three.js
+- @react-three/drei – Useful helpers (like useGLTF, OrbitControls)
+- Vite – Build tool for modern web projects
