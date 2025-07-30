@@ -1,23 +1,11 @@
 import { useGLTF } from '@react-three/drei'
-import { useEffect } from 'react'
+import InteractiveModel from './InteractiveModel'
 
-useGLTF.preload('/models/Room.glb')
-
-export default function Model({ onClick, ...props }) {
-  const gltf = useGLTF('/models/Room.glb')
-
-  // Assign click handlers to meshes
-  useEffect(() => {
-    gltf.scene.traverse((child) => {
-      if (child.isMesh) {
-        child.userData.info = `Info about ${child.name}` // add info
-        child.onClick = (e) => {
-          e.stopPropagation()
-          if (onClick) onClick(child.userData.info)
-        }
-      }
-    })
-  }, [gltf, onClick])
-
-  return <primitive object={gltf.scene} {...props} />
+export default function Model({ onSelect, ...props }) {
+  const { scene } = useGLTF('/models/Room.glb')
+  return (
+    <group {...props}>
+      <InteractiveModel scene={scene} onSelect={onSelect} />
+    </group>
+  )
 }
